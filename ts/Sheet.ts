@@ -86,7 +86,7 @@ class Sheet extends Saveable {
             delete cell.f;
         } else if (cellvalue[0] == '=') {
             // function
-            cell.f = [cellvalue.substr(1).replace(/;/g, ',')];
+            cell.f = [cellvalue.substr(1)];
         } else {
             // assume string
             cell.v = [this.workbook.sharedStrings.getIndex(cellvalue)];
