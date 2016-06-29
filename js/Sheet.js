@@ -74,7 +74,7 @@ var Sheet = (function (_super) {
         }
         else if (cellvalue[0] == '=') {
             // function
-            cell.f = [cellvalue.substr(1).replace(/;/g, ',')];
+            cell.f = [cellvalue.substr(1)];
         }
         else {
             // assume string
